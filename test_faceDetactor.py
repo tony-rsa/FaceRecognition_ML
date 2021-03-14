@@ -22,7 +22,7 @@ class TestDetactFace(unittest.TestCase):
             fail = True
         except Exception:
             self.assertTrue(True)
-        self.assertFalse(fail, "Must rase an exceptions.")
+        self.assertFalse(fail, "Must raise an exceptions.")
 
         
     def test_image_noface(self):
@@ -33,7 +33,7 @@ class TestDetactFace(unittest.TestCase):
             fail = True
         except Exception:
             self.assertTrue(True)
-        self.assertFalse(fail, "Must rase an exceptions")
+        self.assertFalse(fail, "Must raise an exceptions")
 
     
     def test_image_hasface(self):
