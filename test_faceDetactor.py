@@ -43,3 +43,5 @@ class TestDetactFace(unittest.TestCase):
             self.assertEqual(2,len(result), "number of faces incorrect.")
         except TypeError:
             self.assertTrue(False,"Returns list with the location of faces.")
+
+            
