@@ -3,8 +3,8 @@
 TODO - faceRec class
 TODO - webcam handler
 TODO - fairbase storage
-TODO - put in Docker container
-TODO - deploy with FastApi
+TODO - Docker container
+TODO - FastApi Deployment
 
 
 <!---
