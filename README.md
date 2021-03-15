@@ -1,6 +1,6 @@
 ## Still INPROGRESS
 
-TODO - FaceRec class.
+TODO - FaceRecognizer class.
 TODO - Webcam handler.
 TODO - Fairbase storage.
 TODO - Docker container.
