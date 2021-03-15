@@ -1,8 +1,8 @@
 ## Still INPROGRESS
 
-TODO - faceRec class.
-TODO - webcam handler.
-TODO - fairbase storage.
+TODO - FaceRec class.
+TODO - Webcam handler.
+TODO - Fairbase storage.
 TODO - Docker container.
 TODO - FastApi Deployment.
 
