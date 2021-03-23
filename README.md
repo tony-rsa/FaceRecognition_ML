@@ -1,13 +1,18 @@
-<<<<<<< HEAD
-# Facial_Recognition-Python3-OpenCv
+## Still INPROGRESS
 
+TODO - FaceRecognizer class.
+TODO - Webcam handler.
+TODO - Fairbase storage.
+TODO - Docker container.
+TODO - FastApi Deployment.
+TODO - User Interface
+
+
+<!---
+ Facial_Recognition-Python3-OpenCv
 . .venv/bin/activate
 pip install opencv-python
-
 fastapi
 uvicorn
-
 pip freez > requirments.txt
-=======
-# faceRecognition
->>>>>>> c14d2a9e702a0b73c1b389e223a55359df7203a1
+--->
