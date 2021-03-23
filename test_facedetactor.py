@@ -20,7 +20,6 @@ class TestDetactFace(unittest.TestCase):
             faces = FaceDetactor(gray_images[each]).getCroppedFaces()
             self.assertTrue(len (faces) > 0)
 
-<<<<<<< HEAD
 
     # def test_imageIsValid(self):
     #     result = faceDetactor.imageIsValid(None,ROOT_DIR+"/TestData/Images/noface.jpeg")
@@ -59,36 +58,3 @@ class TestDetactFace(unittest.TestCase):
     #         self.assertEqual(2,len(result), "number of faces incorrect.")
     #     except TypeError:
     #         self.assertTrue(False,"Returns list with the location of faces.")
-=======
-    def test_not_an_image(self):
-        img_path = ROOT_DIR+"/TestData/Images/notAnImage.txt"
-        fail = False
-        try:
-            faceDetactor(img_path)
-            fail = True
-        except Exception:
-            self.assertTrue(True)
-        self.assertFalse(fail, "Must raise an exceptions.")
-
-        
-    def test_image_noface(self):
-        img_path = "TestData/Images/noface.jpeg"
-        fail = False
-        try:
-            faceDetactor(img_path).findFace()
-            fail = True
-        except Exception:
-            self.assertTrue(True)
-        self.assertFalse(fail, "Must raise an exceptions")
-
-    
-    def test_image_hasface(self):
-        img_path = ROOT_DIR+"/TestData/Images/hasface.jpg"
-        result =  faceDetactor(img_path).findFace()
-        try:
-            self.assertEqual(2,len(result), "number of faces incorrect.")
-        except TypeError:
-            self.assertTrue(False,"Returns list with the location of faces.")
-
-            
->>>>>>> 0f238791f148b7dc4c2605663388d779ddde9376
