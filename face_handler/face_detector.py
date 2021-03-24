@@ -1,13 +1,14 @@
 import os
 from cv2 import *
+from face_handler.face_detector import *
 
-class FaceDetactor:
+class face_detector:
 
     def __init__(self):
         """
             This Class can detect and encapsulate faces found in an image. 
         """
-        self.faces = [(,)]
+        self.faces = [(None,None)]
 
 
     def detect_face(self,one_gray_image):
@@ -26,22 +27,24 @@ class FaceDetactor:
         return (faces,one_gray_image)
 
 
-    def draw_rect_around_face(image,face):
-        (x, y, w, h) = face
-        rectangle(image,(x, y),(x+w, y+h),
-                                (255, 0, 0),thickness=3)
-        return image
-
-    
-    def write_text_onface(image,text,x,y):
-        putText(image,text,(x,y), FONT_HERSHEY_DUPLEX,2,(255,0,0),4)
-        return (True, image)
-
-
-    def get_arry_of_faces(self)
+    def get_arry_of_faces(self):
         """
             Returns a 2D arry with detected faces and gray image used of detection.  
         """
         return self.faces
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__name__))~
+
+    def write_text_on_img(image,text,x,y):
+        putText(image,text,(x,y), FONT_HERSHEY_DUPLEX,2,(255,0,0),4)
+        return (True, image)
+
+
+    def draw_rect_around_face(image,faces):
+        try:
+            for face in faces:
+                (x, y, w, h) = face
+                rectangle(image,(x, y),(x+w, y+h),
+                                        (255, 0, 0),thickness=3)
+            return image
+        except:
+            raise "face not found"
