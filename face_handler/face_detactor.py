@@ -10,7 +10,7 @@ class FaceDetactor:
         self.faces = [(,)]
 
 
-    def detect(self,one_gray_image):
+    def detect_face(self,one_gray_image):
         """
             Method finds a face in a given gray scale image picture.
             Method uses the haar Classifier's multi Scale detector for accuracy.
@@ -35,13 +35,13 @@ class FaceDetactor:
     
     def write_text_onface(image,text,x,y):
         putText(image,text,(x,y), FONT_HERSHEY_DUPLEX,2,(255,0,0),4)
+        return (True, image)
 
 
-    def get_arry_of_faces(self){
+    def get_arry_of_faces(self)
         """
             Returns a 2D arry with detected faces and gray image used of detection.  
         """
         return self.faces
-    }
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__name__))
+ROOT_DIR = os.path.dirname(os.path.abspath(__name__))~
