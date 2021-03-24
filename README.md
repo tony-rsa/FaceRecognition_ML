@@ -1,4 +1,4 @@
-###Face recognition with Python.
+#Face recognition with Python.
 
 activate venv: '. .venv/bin/activate'
 test face_detector class: 'python3 test_face_detector.py'
