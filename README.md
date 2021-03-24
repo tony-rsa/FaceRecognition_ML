@@ -7,7 +7,7 @@ Program is able to detect and identify a users face using classification models 
 
 ### Installation
 
-Open treminal whiles in the root directory of the program, next activate enviroment:
+Open treminal from the root directory of the program, next activate enviroment:
 
 ```bash
 . .venv/bin/activate
