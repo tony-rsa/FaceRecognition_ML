@@ -22,7 +22,7 @@ class TestDetectFace(unittest.TestCase):
     def test_detect(self):
         result = face_detector().detect_face(image1)
         self.assertTrue(len(result) == 2)
-        self.assertEquals(len(result[0][0]), 4)
+        self.assertEqual(len(result[0][0]), 4)
         self.assertTrue(len(result[1])> 0)
 
 
@@ -41,7 +41,7 @@ class TestDetectFace(unittest.TestCase):
             detection_result = face_detector().detect_face(image1)
             result = face_detector.draw_rect_around_face(input_image1,detection_result[0])
             while True:
-                cv2.imshow("test1 press 'x' to close.", cv2.resize(result, (800, 500)))
+                cv2.imshow("DETECTED.. press 'x' to close.", cv2.resize(result, (800, 500)))
                 if cv2.waitKey(10) == ord('x'):#wait until 'q' key is pressed
                     break
             self.assertTrue(True)
@@ -51,7 +51,7 @@ class TestDetectFace(unittest.TestCase):
     
     def test_write_text_img(self):
         result = face_detector.write_text_on_img(input_image1,
-                                "Test passed if you can read this. press 'x'.",100,950)
+                                "Test passed if you can read this. press 'x' again.",100,950)
         self.assertTrue(result[0])
         while True:
             cv2.imshow("test2 press 'x' to close.", cv2.resize(result[1], (800, 500)))
@@ -64,4 +64,4 @@ class TestDetectFace(unittest.TestCase):
         face_detector().detect_face(image1)
         result  = face_detector().get_arry_of_faces()
         self.assertTrue(len(result) > 0)
-        self.assertEquals(type(result[0]), type((0,0,0,0)))
+        self.assertEqual(type(result[0]), type((0,0,0,0)))
