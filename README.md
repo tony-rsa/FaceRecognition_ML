@@ -1,13 +1,29 @@
-Face recognition - Python3 & openCV.
 
-Activate venv: run '. .venv/bin/activate'.
+## Description
 
-Unittest face_detector class: run 'python3 -m unittest test_face_detector.py'
+Program is able to detect and identify a users face using classification models and the openCV library.  
 
+## Getting Started
 
+### Installation
 
-inprogress, more methods to be added.
+Open treminal whiles in the root directory of the program, next activate enviroment:
 
+```bash
+. .venv/bin/activate
+```
+
+## Executing Program
+
+### Unittests
+
+Run unittest for each Method.
+
+```
+python3 -m unittest test_face_detector.py
+```
+
+### Program still in progress more functions will be added.
 
 <!---
  Facial_Recognition-Python3-OpenCv
