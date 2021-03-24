@@ -1,8 +1,8 @@
-Face recognition with Python.
+Face recognition - Python3 & openCV.
 
-activate venv: '. .venv/bin/activate'.
+Activate venv: run '. .venv/bin/activate'.
 
-test face_detector class: 'python3 test_face_detector.py'
+Unittest face_detector class: run 'python3 test_face_detector.py'
 
 
 
